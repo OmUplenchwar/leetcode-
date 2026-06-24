@@ -10,7 +10,6 @@ class Solution {
         ans=instance;
         int temp=nums.length-1;
         int zero=nums.length-1;
-        // int three=zero-1;
         while(temp>0){
             instance=(instance+sum)-(nums[zero]*nums.length);
            ans=Math.max(ans,instance);
