@@ -13,7 +13,7 @@ class Solution {
             degree[edges[i][0]]++;
             degree[edges[i][1]]++;
             set.add(Arrays.toString(edges[i]));
-            String sb=edges[i][1]+""+edges[i][0];
+            String sb="[" + edges[i][1]+", "+edges[i][0]+"]";
             set.add(sb);
         }
         // System.out.println(list);
@@ -36,20 +36,20 @@ class Solution {
                     }
                 }
                 boolean flag=true;
-                // System.out.println(arr);
-                // for(int j=0;j<arr.size()-1;j++){
-                //     for(int k=j+1;k<arr.size();k++){
-                //         int[] d= {arr.get(j),arr.get(k)};
-                //         if(!set.contains(Arrays.toString(d))){
-                //           flag=false;
-                //         }
+                System.out.println(arr);
+                for(int j=0;j<arr.size()-1;j++){
+                    for(int k=j+1;k<arr.size();k++){
+                        int[] d= {arr.get(j),arr.get(k)};
+                        if(!set.contains(Arrays.toString(d))){
+                          flag=false;
+                        }
 
-                //     }
-                // }
-               
-                for(int j=0;j<arr.size();j++){
-                    if(degree[arr.get(j)]!=arr.size()-1) flag=false;
+                    }
                 }
+               
+                // for(int j=0;j<arr.size();j++){
+                //     if(degree[arr.get(j)]!=arr.size()-1) flag=false;
+                // }
                 if(flag) ans++;
             }
         }
