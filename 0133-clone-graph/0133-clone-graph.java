@@ -36,7 +36,6 @@ class Solution {
                 adj.get(n.val).add(list.get(i).val);
                if(visited[list.get(i).val]==1) continue;
                q.add(list.get(i));
-            //    adj.get(n.val).add(list.get(i).val);
                visited[list.get(i).val]=1;
             }
         }
