@@ -16,8 +16,6 @@ class Solution {
                 
             }
         }
-        System.out.println(Arrays.toString(small));
-        System.out.println(Arrays.toString(big));
         for(int i=0;i<26;i++){
             if(big[i]==1000000 || small[i]==-1) continue;
             if(big[i]>small[i]) ans++;
