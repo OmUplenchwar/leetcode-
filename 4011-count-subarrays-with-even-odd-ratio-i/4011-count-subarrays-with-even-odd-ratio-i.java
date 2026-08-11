@@ -9,7 +9,6 @@ class Solution {
                 else y++;
                 if(y>0 && ((double)x/(double)y)<=((double)a/(double)b)){
                     ans++;
-                    // System.out.println(i+""+j);
                 }
             }
         }
